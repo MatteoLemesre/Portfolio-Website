@@ -34,33 +34,31 @@
   <!-- SECTION -->
   <main>
   <section id="contact" class="contact-section">
-      <h2>Contact</h2>
+    <h2>Contact</h2>
 
-      <div class="group">
-        <div class="text">
-        <p>
-          Let’s get in touch.
-        </p>
-        <p>
-          Feel free to send me a message for any opportunity or collaboration.
-        </p>
-        </div>
-
-        <form>
-          <label for="name">Name</label>
-          <input type="text" id="name">
-
-          <label for="email">Email</label>
-          <input type="email" id="email">
-
-          <label for="message">Message</label>
-          <textarea id="message" cols="30" rows="10"></textarea>
-
-          <button type="submit">Send Message</button>
-        </form>
+    <div class="group">
+      <div class="text">
+        <p>Let’s get in touch.</p>
+        <p>Feel free to send me a message for any opportunity or collaboration.</p>
       </div>
-    </section>
-    </main>
+
+      <form action="mailto:ton.mail@gmail.com" method="post" enctype="text/plain">
+        
+        <label for="name">Name</label>
+        <input type="text" id="name" name="Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="Message" cols="30" rows="10" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+</main>
+
 
      <!-- FOOTER --> 
 <footer class="contact-footer">
