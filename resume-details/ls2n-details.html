@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <title>Portfolio</title>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="../index.html">Matteo Lemesre</a>
+    </div>
+    <div class="right">
+      <a href="../index.html">Home</a>
+      <a href="../experience.html">Experience</a>
+      <a href="../education.html">Education</a>
+      <a href="../projects.html">Projects</a>
+      <a href="../contact.html">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Contact</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- SECTION -->
+  <section class="hero">
+    <img src="images/ls2n.png" alt="Image de couverture">
+    <div class="hero-text">
+      <h1>Titre de l’article</h1>
+      <p>Publié le 12 février 2026</p>
+    </div>
+  </section>
+
+  <main>
+    <article class="article">
+      <header class="article-header">
+        <h1 class="article-title">Epidemiological Analysis at LS2N</h1>
+        <p class="article-date">From September 2023 to March 2024</p>
+      </header>
+
+      <section class="article-content">
+        <h2>Introduction</h2>
+        <p>Durant ma formation à Centrale Nantes et plus particulièrement lors de l'option DataSIM, j'ai pu réaliser avec Aldric Bahna un projet avec le laboratoire LS2N sur le suivi des dynamiques épidémiques. Ce projet, proposé par Said Moussaoui et Mira Rizkallah, a été réalisé avec Jérôme Idier - Directeur de Recherche au CNRS au sein de LS2N - et Barbara Pascal - Chargée de Recherche au CNRS au sein de LS2N.</p>
+        <h2>The Project</h2>
+        <h3>Objectives</h3>
+        <p>
+          L'objectif de ce projet est de développer un outil capable de quantifier la ressemblance ou au contraire la dissemblance entre des dynamiques épidémiques, représentées par des séries temporelles. Cependant, les outils traditionnels de comparaison, comme la norme L2, se révèlent souvent insuffisants pour capturer les similitudes structurelles entre ces dynamiques, en particulier en présence de décalages temporels ou d’amplitudes. Pour pallier ces limites, nous explorons l’utilisation du transport optimal non-équilibré comme une alternative robuste pour mesurer les distances entre séries temporelles (distance de Wasserstein généralisée).
+        </p>
+        <h3>Processes</h3>
+        <p>
+          Durant ce projet, nou savons travaillé de manière méthodique en 3 parties. La première partie fut de travailler sur un exemple jouet pour comprendre les limites de la norme classique et voir comment la distance de Wasserstein généralisée pouvait nous aider. Ensuite, nous avons travailler sur les départements de l'Île de France. Enfin, nous avons developpé une application Streamlit qui permet de voir rapidement, à travers des graphes et des matrices de corrélations, les ressemblances entre différents départements en France. 
+        </p>
+        <h3>Appendix</h3>
+        <p>Données & Fonctions de référence : <a href=https://uncloud.univ-nantes.fr/index.php/s/g9WCXtFZyWJSs5e target="_blank" rel="noopener noreferrer">Lien</a> </p>
+        <p>Estimer le coefficient R : <a href=https://github.com/juliana-du/Covid-R-estim/blob/main/include/estim/Rt_Univariate.py target="_blank" rel="noopener noreferrer">Lien</a></p>
+        <p>Calculer la distance de Wasserstein non-équilibrée : <a href=https://pythonot.github.io/gen_modules/ot.unbalanced.html#module-ot.unbalanced target="_blank" rel="noopener noreferrer">Lien</a></p>
+        <p>Utiliser Streamlit : <a href=https://streamlit.io target="_blank" rel="noopener noreferrer">Lien</a></p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

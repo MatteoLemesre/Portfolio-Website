@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <title>Portfolio</title>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="../index.html">Matteo Lemesre</a>
+    </div>
+    <div class="right">
+      <a href="../index.html">Home</a>
+      <a href="../experience.html">Experience</a>
+      <a href="../education.html">Education</a>
+      <a href="../projects.html">Projects</a>
+      <a href="../contact.html">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Contact</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- SECTION -->
+  <section class="hero">
+    <img src="images/sncf.svg" alt="Image de couverture">
+    <div class="hero-text">
+      <h1>Titre de l’article</h1>
+      <p>Publié le 12 février 2026</p>
+    </div>
+  </section>
+
+  <main>
+    <article class="article">
+      <header class="article-header">
+        <h1 class="article-title">Data Science Challenge at SNCF</h1>
+        <p class="article-date">From November 2023 to December 2023</p>
+      </header>
+
+      <section class="article-content">
+        <p>• Built an end-to-end forecasting pipeline in Python (pandas, scikit-learn) to predict next-station occupancy rates from infrared door-count data.</p>
+        <p>• Achieved a mean absolute error (MAE) of 0.005 versus the 0.01 benchmark, by comparing linear models, Random Forest (best MAE 0.005), neural networks and XGBoost.</p>
+        <p>• Engineered features including contextual variables (date, train number, station ID, time slot, direction, train composition) and six past occupancy lags per train and per station, handling missing values via KNN imputation and business rules.</p>
+        <p>• Streamlined data preprocessing: one-hot encoding of categorical fields, datetime feature extraction, correlation-based feature pruning.</p>
+        <p>• Collaborated via GitHub with branch-based development, pull requests and code reviews to ensure reproducibility and continuous integration.</p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

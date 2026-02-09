@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <title>Portfolio</title>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="../index.html">Matteo Lemesre</a>
+    </div>
+    <div class="right">
+      <a href="../index.html">Home</a>
+      <a href="../experience.html">Experience</a>
+      <a href="../education.html">Education</a>
+      <a href="../projects.html">Projects</a>
+      <a href="../contact.html">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Contact</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- SECTION -->
+  <section class="hero">
+    <img src="images/helloasso.svg" alt="Image de couverture">
+    <div class="hero-text">
+      <h1>Titre de l’article</h1>
+      <p>Publié le 12 février 2026</p>
+    </div>
+  </section>
+
+  <main>
+    <article class="article">
+      <header class="article-header">
+        <h1 class="article-title">Data Scientist at HelloAsso</h1>
+        <p class="article-date">From April 2024 to August 2024</p>
+      </header>
+
+      <section class="article-content">
+        <h2>Introduction</h2>
+        <h3>Presentation of HelloAsso</h3>
+        <p>
+          HelloAsso est une plateforme numérique française dédiée à soutenir les associations et les organisations à but non lucratif. Fondée en 2009, HelloAsso s'est imposée comme un acteur incontournable du secteur associatif en France, permettant aux associations de gérer facilement leurs collectes de fonds, adhésions, ventes de billets pour des événements, campagnes de crowdfunding, et plus encore. Ce qui distingue HelloAsso des autres plateformes, c'est son engagement social et solidaire.
+        </p>
+        <h3>Presentation of the Team</h3>
+        <p>
+          Durant ce stage, j'ai été accopagné par 3 personnes: Didier COLIN - directeur de Recherche et encadrant de stage, Frédérique CASTAGNAC - Chief Data officer et Erwan OLIVIER - Data scientist. Ces trois personnes m'ont permis de mieux avancer et de mieux structurer mes pensées. 
+        </p>
+        <p>
+          Lors de quelques réunions, j'ai présenté mon travail au comité de direction composé de Léa THOMASSIN - Présidente d'HelloAsso, de Pedro Mendoza Sevilla - Chief Financial et de Nicolas Vonthron - Directeur général. Ces dernières avaient pour but d'ajuster les objectifs et d'avancer avec ceux qui utiliseront le modèle à la fin de ce projet.
+        </p>
+          
+
+        <h2>The internship</h2>
+        <h3>Objectives</h3>
+        <p>
+          Le modèle économique de HelloAsso repose donc sur les contributions volontaires des utilisateurs. Lorsqu’un paiement est effectué sur la plateforme, un montant de contribution, facultative et modifiable, est suggéré au payeur, afin de soutenir financièrement HelloAsso. L’entièreté des revenus de l’entreprise repose ainsi sur la générosité des contributeurs. La compréhension des comportements de générosité sur le long terme est donc un enjeu crucial pour la pérennité du modèle économique de HelloAsso.
+        </p>
+        <p>
+          Il s'agit alors, pour HelloAsso, de capitaliser sur les données disponibles aujourd’hui pour bâtir des prévisions basées sur les observations. Cette approche permettra d'anticiper des budgets annuels, de piloter la collecte mois par mois ou semaine par semaine et évaluer les manques à gagner en cas d'incidents sur la plate-forme. 
+        </p>
+        <h3>Overview of the Project</h3>
+        <p>
+         Ce stage s'est déroulé en 3 étapes. La première fut d'analyser les données, cruciale pour la bonne compréhension du problème et pour la préparation de la phase de prédictions. La deuxième fut d'évaluer différents modèles: SARIMA et le réseau de neurones LSTM (long Short-Term Memory). J'ai pu évaluer ces méthopdes grâce au score RMSE. Puis la phase de combinaison avec une méthode de prédiction jour par jour.
+        </p>
+
+      </section>
+    </article>
+  </main>
+</body>
+</html>
