@@ -9,22 +9,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
   <title>Portfolio</title>
 </head>
 <body>
 
   <!-- NAVBAR -->
- <nav>
+  <nav>
     <div class="left">
       <a href="index.html">Matteo Lemesre</a>
     </div>
     <div class="right">
-      <a href="index.html">Home</a>
-      <a href="experience.html">Experience</a>
-      <a href="education.html">Education</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#education">Education</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#contact">
         <i class="fa-solid fa-envelope"></i>
         <span>Contact</span>
       </a>
@@ -33,47 +32,61 @@
 
   <!-- SECTION -->
   <main>
-  <section id="basic" class="basic-section">
+    <section id="basic" class="basic-section">
 
       <h2>Projects</h2>
-      <div class="group">
-        <div class="person-details">
-          <img src="images/ls2n.png">
-          <p>LS2N</p>
-          <p>Nantes, France</p>
-        </div>
-        <div class="text">
-          <strong>Epidemiological Analysis</strong>
-          <em>Sept 2024 - Mar 2025</em>
-          <p>• <span class="underline">Objective</span>: Comparing epidemiological dynamics of COVID-19 across different territories using tools from the mathematical theory of Unbalanced Optimal Transport.</p>
-         <p>• <span class="underline">Skills</span>: Mathematical analysis, time series data processing, algorithm implementation in Python, optimization, interactive visualization with Streamlit.</p>
-        </div>
-      </div>
-       <a href="resume-details/ls2n-details.html" class="details-btn">
-          More details 
-        </a>
 
-      <div class="group">
-        <div class="person-details">
-          <img src="images/sncf.jpeg">
-          <p>SNCF</p>
-          <p>Nantes, France</p>
+      <!-- LS2N — featured -->
+      <article class="exp-card exp-card--featured">
+        <div class="exp-card__header">
+          <img class="exp-card__logo" src="images/ls2n.png" alt="LS2N logo">
+          <div class="exp-card__meta">
+            <div class="exp-card__title-row">
+              <h3 class="exp-card__role">Epidemiological Analysis</h3>
+              <span class="exp-card__period">Sept 2024 – Mar 2025</span>
+            </div>
+            <p class="exp-card__company">LS2N &middot; Nantes, France</p>
+          </div>
         </div>
-        <div class="text">
-          <strong>Data Science Challenge</strong>
-          <em>Sept 2024 - Mar 2025</em>
-         <p>• <span class="underline">Objective</span>: Predicting passenger load on SNCF trains using temporal, geographic and contextual data. Development of a complete data pipeline, from exploration to modeling.</p>
-         <p>• <span class="underline">Skills</span>: Python, Data cleaning and exploratory analysis (Pandas, Seaborn), supervised modeling (linear regression, random forest, gradient boosting), recurrent neural networks (RNN) and model evaluation.</p>
+        <p class="exp-card__desc">Compared COVID-19 epidemiological dynamics across territories using mathematical tools from Unbalanced Optimal Transport theory, with interactive visualizations built in Streamlit.</p>
+        <div class="exp-card__tags">
+          <span class="exp-tag">Python</span>
+          <span class="exp-tag">Optimal Transport</span>
+          <span class="exp-tag">Time Series</span>
+          <span class="exp-tag">Streamlit</span>
+          <span class="exp-tag">Optimization</span>
         </div>
-      </div>
-       <a href="resume-details/sncf-details.html" class="details-btn">
-          More details 
-        </a>
+        <a href="resume-details/ls2n-details.html" class="details-btn">More details</a>
+      </article>
+
+      <!-- SNCF -->
+      <article class="exp-card">
+        <div class="exp-card__header">
+          <img class="exp-card__logo" src="images/sncf.jpeg" alt="SNCF logo">
+          <div class="exp-card__meta">
+            <div class="exp-card__title-row">
+              <h3 class="exp-card__role">Data Science Challenge</h3>
+              <span class="exp-card__period">Sept 2024 – Mar 2025</span>
+            </div>
+            <p class="exp-card__company">SNCF &middot; Nantes, France</p>
+          </div>
+        </div>
+        <p class="exp-card__desc">Predicted passenger load on SNCF trains from temporal, geographic and contextual data. Built a complete pipeline from exploration to modeling, including RNN architectures, gradient boosting and thorough model evaluation.</p>
+        <div class="exp-card__tags">
+          <span class="exp-tag">Python</span>
+          <span class="exp-tag">Pandas</span>
+          <span class="exp-tag">Seaborn</span>
+          <span class="exp-tag">Random Forest</span>
+          <span class="exp-tag">Gradient Boosting</span>
+          <span class="exp-tag">RNN</span>
+        </div>
+        <a href="resume-details/sncf-details.html" class="details-btn">More details</a>
+      </article>
 
     </section>
-    </main>
+  </main>
 
-     <!-- FOOTER --> 
+  <!-- FOOTER -->
 <footer class="contact-footer">
   <div class="contact-footer-content">
 

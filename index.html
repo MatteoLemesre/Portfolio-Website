@@ -9,132 +9,543 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
-  <title>Portfolio</title>
+  <script src="script.js" defer></script>
+  <title>Matteo Lemesre — Portfolio</title>
 </head>
 <body>
 
   <!-- NAVBAR -->
   <nav>
     <div class="left">
-      <a href="index.html">Matteo Lemesre</a>
+      <a href="#">Matteo Lemesre</a>
     </div>
     <div class="right">
-      <a href="index.html">Home</a>
-      <a href="experience.html">Experience</a>
-      <a href="education.html">Education</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">
         <i class="fa-solid fa-envelope"></i>
         <span>Contact</span>
       </a>
     </div>
   </nav>
 
-  <!-- SECTION -->
   <main>
+
+    <!-- ── HERO ─────────────────────────────────────────── -->
     <section class="hero-section">
       <div class="text">
         <h2>Hello, I am a Data Scientist</h2>
         <p>Graduate from École Centrale de Nantes (Nantes, France), 23 years old, specialized in Applied Mathematics and Data Science, I am currently working at Qualidata as a Data Scientist.</p>
 
         <div class="links">
-            <div class="links-row">
-                <a href="images/CV_Lemesre_FR.pdf" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-solid fa-file-pdf"></i>
-                    <span>Download CV (French)</span>
-                </a>
-
-                <a href="images/CV_Lemesre_EN.pdf" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-solid fa-file-pdf"></i>
-                    <span>Download CV (English)</span>
-                </a>
-            </div>
+          <div class="links-row">
+            <a href="images/CV_Lemesre_FR.pdf" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-file-pdf"></i>
+              <span>Download CV (French)</span>
+            </a>
+            <a href="images/CV_Lemesre_EN.pdf" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-file-pdf"></i>
+              <span>Download CV (English)</span>
+            </a>
+          </div>
         </div>
-
       </div>
 
       <div class="headshot">
         <img src="images/Photo.png" alt="Matteo Lemesre">
       </div>
     </section>
+
+    <!-- ── CARD SECTIONS ─────────────────────────────────── -->
+    <div class="sp-sections">
+
+      <!-- EXPERIENCE -->
+      <section id="experience">
+        <div class="sp-section-label">Experience</div>
+        <div class="sp-grid">
+
+          <!-- Qualidata — current -->
+          <article class="sp-card sp-card--featured">
+            <div class="sp-card__head">
+              <span class="sp-card__company">Qualidata</span>
+              <span class="sp-card__location">Lille, France</span>
+            </div>
+            <div class="sp-card__role-row">
+              <span class="sp-card__role">Data Scientist</span>
+              <span class="sp-card__period">Feb 2026 – Now</span>
+            </div>
+            <p class="sp-card__desc">Building data architecture solutions and analytical dashboards to support business decision-making.</p>
+            <div class="sp-card__tags">
+              <span class="sp-tag">Python</span>
+              <span class="sp-tag">Power BI</span>
+            </div>
+            <a href="#" data-modal="qualidata" class="sp-card__link">Details →</a>
+          </article>
+
+          <!-- ALSTOM -->
+          <article class="sp-card">
+            <div class="sp-card__head">
+              <span class="sp-card__company">ALSTOM</span>
+              <span class="sp-card__location">Bangkok, Thailand</span>
+            </div>
+            <div class="sp-card__role-row">
+              <span class="sp-card__role">Data Engineer – Internship</span>
+              <span class="sp-card__period">Apr 2025 – Sep 2025</span>
+            </div>
+            <p class="sp-card__desc">Designed and implemented a BIM library to streamline project information access across engineering teams. Developed data extraction scripts, automated asset tagging and led a four-member team.</p>
+            <div class="sp-card__tags">
+              <span class="sp-tag">Python</span>
+              <span class="sp-tag">C#</span>
+              <span class="sp-tag">Windev</span>
+              <span class="sp-tag">Data Architecture</span>
+              <span class="sp-tag">Project Management</span>
+            </div>
+            <a href="#" data-modal="alstom" class="sp-card__link">Details →</a>
+          </article>
+
+          <!-- Lycée St Stanislas -->
+          <article class="sp-card">
+            <div class="sp-card__head">
+              <span class="sp-card__company">Lycée St Stanislas</span>
+              <span class="sp-card__location">Nantes, France</span>
+            </div>
+            <div class="sp-card__role-row">
+              <span class="sp-card__role">Mathematics Oral Examiner</span>
+              <span class="sp-card__period">Sep 2024 – Mar 2025</span>
+            </div>
+            <p class="sp-card__desc">Conducted weekly oral exams (colles) for groups of three students in analysis, algebra and mathematical reasoning — preparing them for entrance into top French engineering schools.</p>
+            <div class="sp-card__tags">
+              <span class="sp-tag">Analysis</span>
+              <span class="sp-tag">Algebra</span>
+              <span class="sp-tag">Teaching</span>
+            </div>
+          </article>
+
+          <!-- HelloAsso -->
+          <article class="sp-card">
+            <div class="sp-card__head">
+              <span class="sp-card__company">HelloAsso</span>
+              <span class="sp-card__location">Bordeaux, France</span>
+            </div>
+            <div class="sp-card__role-row">
+              <span class="sp-card__role">Data Scientist – Internship</span>
+              <span class="sp-card__period">Apr 2024 – Aug 2024</span>
+            </div>
+            <p class="sp-card__desc">Predicted short- and long-term marketing benefits to guide strategic decisions. Benchmarked ARIMA/SARIMAX, Gradient Boosting and LSTM models with full hyperparameter optimization.</p>
+            <div class="sp-card__tags">
+              <span class="sp-tag">Python</span>
+              <span class="sp-tag">SQL</span>
+              <span class="sp-tag">Pandas</span>
+              <span class="sp-tag">Scikit-learn</span>
+              <span class="sp-tag">TensorFlow</span>
+            </div>
+            <a href="#" data-modal="helloasso" class="sp-card__link">Details →</a>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section id="education">
+        <div class="sp-section-label">Education</div>
+        <div class="sp-grid">
+
+          <!-- Centrale Nantes — featured -->
+          <article class="sp-card sp-card--featured">
+            <div class="sp-card__head">
+              <span class="sp-card__company">École Centrale de Nantes</span>
+              <span class="sp-card__location">Nantes, France</span>
+            </div>
+            <div class="sp-card__role-row">
+              <span class="sp-card__role">Engineer's Degree — Applied Mathematics &amp; Data Science</span>
+              <span class="sp-card__period">Sep 2022 – Sep 2025</span>
+            </div>
+            <p class="sp-card__desc">Machine Learning, Statistical Learning, Numerical Probabilities, Optimization, and Statistical Data Modeling.</p>
+            <div class="sp-card__tags">
+              <span class="sp-tag">Machine Learning</span>
+              <span class="sp-tag">Statistics</span>
+              <span class="sp-tag">Optimization</span>
+              <span class="sp-tag">Python</span>
+            </div>
+            <a href="#" data-modal="cn" class="sp-card__link">Details →</a>
+          </article>
+
+          <!-- Lycée Janson de Sailly -->
+          <article class="sp-card">
+            <div class="sp-card__head">
+              <span class="sp-card__company">Lycée Janson de Sailly</span>
+              <span class="sp-card__location">Paris, France</span>
+            </div>
+            <div class="sp-card__role-row">
+              <span class="sp-card__role">Classes Préparatoires aux Grandes Écoles</span>
+              <span class="sp-card__period">Sep 2020 – Jun 2022</span>
+            </div>
+            <p class="sp-card__desc">Intensive 2-year program preparing for the national competitive exams for admission to top French engineering schools.</p>
+            <div class="sp-card__tags">
+              <span class="sp-tag">Mathematics</span>
+              <span class="sp-tag">Physics</span>
+              <span class="sp-tag">Python</span>
+              <span class="sp-tag">SQL</span>
+            </div>
+          </article>
+
+          <!-- Lycée Thérèse d'Avila -->
+          <article class="sp-card">
+            <div class="sp-card__head">
+              <span class="sp-card__company">Lycée Thérèse d'Avila</span>
+              <span class="sp-card__location">Lille, France</span>
+            </div>
+            <div class="sp-card__role-row">
+              <span class="sp-card__role">High School Diploma — Science</span>
+              <span class="sp-card__period">Sep 2017 – Jun 2020</span>
+            </div>
+            <p class="sp-card__desc">French Baccalauréat with a science specialization, obtained with honors (mention Très Bien).</p>
+            <div class="sp-card__tags">
+              <span class="sp-tag">Sciences</span>
+              <span class="sp-tag">Mathematics</span>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects">
+        <div class="sp-section-label">Projects</div>
+        <div class="sp-grid">
+
+          <!-- LS2N — featured -->
+          <article class="sp-card sp-card--featured">
+            <div class="sp-card__head">
+              <span class="sp-card__company">LS2N</span>
+              <span class="sp-card__location">Nantes, France</span>
+            </div>
+            <div class="sp-card__role-row">
+              <span class="sp-card__role">Epidemiological Analysis</span>
+              <span class="sp-card__period">Sep 2023 – Mar 2024</span>
+            </div>
+            <p class="sp-card__desc">Compared COVID-19 dynamics across territories using Unbalanced Optimal Transport theory, with interactive visualizations built in Streamlit.</p>
+            <div class="sp-card__tags">
+              <span class="sp-tag">Python</span>
+              <span class="sp-tag">Optimal Transport</span>
+              <span class="sp-tag">Time Series</span>
+              <span class="sp-tag">Streamlit</span>
+            </div>
+            <a href="#" data-modal="ls2n" class="sp-card__link">Details →</a>
+          </article>
+
+          <!-- SNCF -->
+          <article class="sp-card">
+            <div class="sp-card__head">
+              <span class="sp-card__company">SNCF</span>
+              <span class="sp-card__location">Nantes, France</span>
+            </div>
+            <div class="sp-card__role-row">
+              <span class="sp-card__role">Data Science Challenge</span>
+              <span class="sp-card__period">Nov 2023 – Dec 2023</span>
+            </div>
+            <p class="sp-card__desc">Predicted passenger load on SNCF trains from temporal, geographic and contextual data — full pipeline from exploration to RNN and gradient boosting models.</p>
+            <div class="sp-card__tags">
+              <span class="sp-tag">Python</span>
+              <span class="sp-tag">Pandas</span>
+              <span class="sp-tag">Gradient Boosting</span>
+              <span class="sp-tag">RNN</span>
+            </div>
+            <a href="#" data-modal="sncf" class="sp-card__link">Details →</a>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="sp-section-label">Contact</div>
+        <div class="sp-contact-layout">
+          <div class="sp-contact-intro">
+            <p>Let's get in touch.</p>
+            <p>Feel free to send me a message for any opportunity or collaboration.</p>
+          </div>
+          <form id="contactForm" action="https://formspree.io/f/xeelepnl" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="Email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+            <div id="successMessage" class="success-message">
+              Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </section>
+
+    </div>
   </main>
 
- <!-- FOOTER --> 
-<footer class="contact-footer">
-  <div class="contact-footer-content">
-
-    <h3>Contact</h3>
-
-    <div class="contact-columns">
-      <div class="contact-col">
-        <span class="contact-label">Mail</span>
-        <a href="mailto:lemesre.matteo@gmail.com">
-          lemesre.matteo@gmail.com
+  <!-- FOOTER -->
+  <footer class="sp-footer">
+    <div class="sp-footer__inner">
+      <p class="sp-footer__copy">© 2026 Matteo Lemesre</p>
+      <div class="sp-footer__icons">
+        <a href="https://github.com/MatteoLemesre" target="_blank" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/matteo-lemesre" target="_blank" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
         </a>
       </div>
+    </div>
+  </footer>
 
-      <div class="contact-col">
-        <span class="contact-label">Phone</span>
-        <a href="tel:+33786948576">
-          +33 7 86 94 85 76
-        </a>
-      </div>
+  <!-- ── MODAL OVERLAY ─────────────────────────────────────── -->
+  <div id="modal-overlay" aria-hidden="true">
+    <div id="modal-panel" role="dialog" aria-modal="true">
 
-      <div class="contact-col">
-        <span class="contact-label">Links</span>
-        <div class="contact-icons">
-          <a href="https://github.com/MatteoLemesre" target="_blank">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://linkedin.com/in/matteo-lemesre" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
+      <!-- Sticky header -->
+      <div id="modal-header">
+        <div id="modal-badges"></div>
+        <div id="modal-title-row">
+          <h2 id="modal-title"></h2>
+          <button id="modal-close" aria-label="Close modal">✕</button>
         </div>
       </div>
-    </div>
 
-    <div class="footer-bottom">
-      <p class="footer-copy">© 2026 Matteo Lemesre</p>
-    </div>
+      <!-- Info row -->
+      <div id="modal-info-row"></div>
 
+      <hr class="modal-divider">
+
+      <!-- Content -->
+      <div id="modal-body"></div>
+
+      <hr class="modal-divider">
+
+      <!-- Skills -->
+      <div id="modal-skills"></div>
+
+    </div>
   </div>
-</footer>
+
+  <script>
+    /* ── Modal data ──────────────────────────────────────── */
+    const modalData = {
+      qualidata: {
+        badges: [
+          { text: '● Current position', current: true },
+          { text: 'Feb. 2026 — Present' },
+          { text: 'Lille, France' }
+        ],
+        title: 'Data Scientist at Qualidata',
+        info: [
+          { label: 'Company',  value: 'Qualidata' },
+          { label: 'Role',     value: 'Data Scientist' },
+          { label: 'Location', value: 'Lille, France' },
+          { label: 'Type',     value: 'Full-time' }
+        ],
+        body: `
+          <p class="modal-section-title">Objective</p>
+          <p class="modal-p">Data architecture.</p>
+        `,
+        skills: ['Python', 'Power BI']
+      },
+
+      alstom: {
+        badges: [
+          { text: 'Apr. 2025 — Sept. 2025' },
+          { text: 'Bangkok, Thailand' },
+          { text: 'Internship' }
+        ],
+        title: 'Data Engineer at Alstom',
+        info: [
+          { label: 'Company',  value: 'Alstom' },
+          { label: 'Role',     value: 'Data Engineer' },
+          { label: 'Location', value: 'Bangkok, Thailand' },
+          { label: 'Type',     value: 'Internship' }
+        ],
+        body: `
+          <p class="modal-section-title">Presentation of Alstom</p>
+          <p class="modal-p">ALSTOM is a well-known French company that manufactures rolling stock and was founded in 1928. The company operates globally in the rail transport sector and employs over eighty thousand people. ALSTOM operates in various sectors including passenger transport and signalling systems, producing a variety of trains, including high-speed, suburban, regional and urban trains, as well as trams.</p>
+          <p class="modal-p">During my internship, I joined the Building Information Modeling (BIM) department, which is a fast-growing team. Although the BIM department is relatively new, established less than three years ago, it has grown significantly and now has about ten dedicated professionals, 18 with the interns.</p>
+          <p class="modal-section-title">Presentation of BIM</p>
+          <p class="modal-p">Building Information Modelling (BIM) is more than digital geometry. It integrates data on time, cost, sustainability and functionality. Unlike traditional CAD (Computer-Aided Design), BIM provides a complete view of a project, helping engineers make better decisions, enhance collaboration, increase productivity and ensure timely delivery.</p>
+          <p class="modal-p">BIM converts 2D plans into 3D models, retains information from earlier stages, reduces risks and costs, improves visualization, and streamlines communication. It also minimizes disputes, redesign work, and supports better management during construction and operation phases.</p>
+          <p class="modal-section-title">The Objectives</p>
+          <p class="modal-p">During my internship at ALSTOM, I focused on a research and development project titled "BIM Library." The primary objective of this project is to establish a centralized library that consolidates all data related to Building Information Modelling objects. This involved systematically retrieving project metadata, implementing asset tagging, developing scripts and creating comprehensive process and method sheets.</p>
+          <p class="modal-p">As the lead of this project, I was responsible for overseeing all parts of the research and development activities. This was a complete initiative that started from scratch, requiring teamwork from all members to ensure its success. We aimed to solve common problems such as inconsistent data formats, delays in finding elements, disorganized file storage, difficulties in accessing and sharing content and duplicate work across teams.</p>
+          <p class="modal-section-title">The Team</p>
+          <p class="modal-p">For this project, we were four interns from different schools, each bringing unique skills to the team. I worked with Kacper Brossard (Designer), Thandar Lwin (BIM Support) and Wassim Hmidy (Developer). The project was managed under the guidance of Garance Marion (AI and Data Science Engineer) and Hugues Zarka (BIM Deputy Director).</p>
+          <p class="modal-p">My initial focus was to define the project scope and coordinate the team's efforts. I established the workflows, worked on the database and guided the creation of the interfaces necessary for the BIM Library. During the development phase, I worked on the plug-ins (development in C#) and WinDev.</p>
+        `,
+        skills: ['Python', 'C#', 'WinDev', 'Interface design', 'Data architecture', 'Project management']
+      },
+
+      helloasso: {
+        badges: [
+          { text: 'Apr. 2024 — Aug. 2024' },
+          { text: 'Bordeaux, France' },
+          { text: 'Internship' }
+        ],
+        title: 'Data Scientist at HelloAsso',
+        info: [
+          { label: 'Company',  value: 'HelloAsso' },
+          { label: 'Role',     value: 'Data Scientist' },
+          { label: 'Location', value: 'Bordeaux, France' },
+          { label: 'Type',     value: 'Internship' }
+        ],
+        body: `
+          <p class="modal-section-title">Presentation of HelloAsso</p>
+          <p class="modal-p">HelloAsso is a French online platform that supports non-profit organizations and associations. Founded in 2009, it has become a key actor in the French non-profit sector. The platform allows associations to manage fundraising, memberships, event ticketing, crowdfunding campaigns, and more. What makes HelloAsso different from other platforms is its social and solidarity-based model.</p>
+          <p class="modal-section-title">Presentation of the Team</p>
+          <p class="modal-p">During this internship, I was supervised by three people: Didier Colin (Research Director and internship supervisor), Frédérique Castagnac (Chief Data Officer), and Erwan Olivier (Data Scientist). They helped me structure my work and improve my analysis.</p>
+          <p class="modal-p">I also presented my work to the executive committee, which included Léa Thomassin (President), Pedro Mendoza Sevilla (CFO), and Nicolas Vonthron (CEO). These meetings helped refine the project objectives and align the work with the needs of the final users.</p>
+          <p class="modal-section-title">Objectives</p>
+          <p class="modal-p">HelloAsso's business model is based on voluntary contributions from users. When a payment is made on the platform, a suggested contribution is displayed — optional and modifiable. All company revenue comes from these voluntary contributions.</p>
+          <p class="modal-p">Understanding long-term generosity behavior is therefore essential for the sustainability of HelloAsso's business model. The goal of this project was to use historical data to build forecasting models to anticipate annual budgets, monitor revenue month by month or week by week, and estimate potential losses in case of platform issues.</p>
+          <p class="modal-section-title">Overview of the Project</p>
+          <p class="modal-p">The internship was divided into three main steps. First, I analyzed the data — essential to understand the problem and prepare the forecasting phase. Second, I evaluated different models: SARIMA and LSTM (Long Short-Term Memory) neural networks, comparing their performance using the RMSE metric. Finally, I developed a combined approach with a day-by-day forecasting method.</p>
+        `,
+        skills: ['Python', 'SQL', 'Pandas', 'Scikit-learn', 'TensorFlow', 'ARIMA/SARIMAX', 'LSTM', 'Data visualization', 'Communication']
+      },
+
+      cn: {
+        badges: [
+          { text: 'Sept. 2022 — Sept. 2025' },
+          { text: 'Nantes, France' },
+          { text: "Engineer's Degree" }
+        ],
+        title: "Engineer's Degree at Centrale Nantes",
+        info: [
+          { label: 'School',   value: 'École Centrale de Nantes' },
+          { label: 'Degree',   value: "Engineer's Degree" },
+          { label: 'Majors',   value: 'Applied Maths & Data Science' },
+          { label: 'Location', value: 'Nantes, France' }
+        ],
+        body: `
+          <p class="modal-section-title">Overview</p>
+          <p class="modal-p">Centrale Nantes is a top-10 French engineering school.</p>
+          <p class="modal-section-title">Applied Mathematics</p>
+          <p class="modal-p">• Machine Learning and Statistical Learning (kernel methods, random forests, boosting, deep learning).<br>• Numerical Probabilities (Monte Carlo, Randomized Linear Algebra).<br>• Fundamental Mathematics (Functional Analysis, Probability and Stochastic Processes, Numerical Analysis of PDEs/SDEs).<br>• Stochastic Modeling and Computation, Uncertainty Quantification.</p>
+          <p class="modal-section-title">DataSIM — Data Science</p>
+          <p class="modal-p">• Processing Scientific Computing and Optimization, Statistical Data Modeling, Statistical Learning.<br>• Graphs and Time Series Analysis.<br>• Image Analysis, Signal Processing and Representation.</p>
+          <p class="modal-section-title">International Business Development</p>
+          <p class="modal-p">• Finance, Prospecting and Sales.<br>• International Marketing.<br>• Law and Negotiation.</p>
+        `,
+        skills: ['Machine Learning', 'Python', 'Optimization', 'Probability', 'Time Series', 'Signal Processing']
+      },
+
+      ls2n: {
+        badges: [
+          { text: 'Sept. 2023 — Mar. 2024' },
+          { text: 'Nantes, France' },
+          { text: 'Research Project' }
+        ],
+        title: 'Analyse Épidémiologique au LS2N',
+        info: [
+          { label: 'Laboratoire', value: 'LS2N — CNRS' },
+          { label: 'Type',        value: 'Projet de Recherche' },
+          { label: 'Contexte',    value: 'DataSIM — Centrale Nantes' },
+          { label: 'Lieu',        value: 'Nantes, France' }
+        ],
+        body: `
+          <p class="modal-section-title">Introduction</p>
+          <p class="modal-p">Durant ma formation à Centrale Nantes et plus particulièrement lors de l'option DataSIM, j'ai pu réaliser avec Aldric Bahna un projet avec le Laboratoire des Sciences du Numériques de Nantes portant sur le suivi des dynamiques épidémiques. Ce projet a été proposé et encadré par Barbara Pascal, Chargée de Recherche au CNRS au sein du LS2N et Jérôme Idier, Directeur de Recherche au CNRS au sein du LS2N.</p>
+          <p class="modal-section-title">Objectifs</p>
+          <p class="modal-p">L'objectif de ce projet était de développer un outil capable de quantifier la ressemblance — ou au contraire la dissemblance — entre des dynamiques épidémiques issues de données réelles de comptages d'infections. À partir de ces données, nous estimions le nombre de reproduction effectif R(t), indicateur clé décrivant l'évolution de la propagation de l'épidémie au cours du temps. C'est le profil temporel de R(t) que nous cherchions à comparer entre différents territoires.</p>
+          <p class="modal-p">Les outils traditionnels de comparaison, tels que la norme L2, se révèlent souvent insuffisants pour capturer les similitudes structurelles entre ces dynamiques, notamment en présence de décalages temporels ou de variations d'amplitude. Pour pallier ces limites, nous avons exploré l'utilisation du transport optimal non équilibré comme alternative robuste pour mesurer les distances entre séries temporelles, via une distance de Wasserstein généralisée.</p>
+          <p class="modal-section-title">Processus</p>
+          <p class="modal-p">Durant ce projet, nous avons travaillé de manière méthodique en 3 parties. La première partie fut de travailler sur un exemple jouet pour comprendre les limites de la norme classique et voir comment la distance de Wasserstein généralisée pouvait nous aider. Ensuite, nous avons travaillé sur une comparaison des dynamiques entre les différents départements situés en Île-de-France. Enfin, nous avons développé une application Streamlit qui permet de voir rapidement, à travers des graphes et des matrices de corrélations, les ressemblances entre différents départements en France.</p>
+        `,
+        skills: ['Python', 'Transport Optimal', 'Distance de Wasserstein', 'Séries Temporelles', 'Streamlit', 'Analyse Mathématique']
+      },
+
+      sncf: {
+        badges: [
+          { text: 'Nov. 2023 — Dec. 2023' },
+          { text: 'Nantes, France' },
+          { text: 'Data Science Challenge' }
+        ],
+        title: 'Data Science Challenge at SNCF',
+        info: [
+          { label: 'Organization', value: 'SNCF' },
+          { label: 'Type',         value: 'Academic Challenge' },
+          { label: 'Context',      value: 'Centrale Nantes' },
+          { label: 'Location',     value: 'Nantes, France' }
+        ],
+        body: `
+          <p class="modal-p">• Built an end-to-end forecasting pipeline in Python (pandas, scikit-learn) to predict next-station occupancy rates from infrared door-count data.</p>
+          <p class="modal-p">• Achieved a mean absolute error (MAE) of 0.005 versus the 0.01 benchmark, by comparing linear models, Random Forest (best MAE 0.005), neural networks and XGBoost.</p>
+          <p class="modal-p">• Engineered features including contextual variables (date, train number, station ID, time slot, direction, train composition) and six past occupancy lags per train and per station, handling missing values via KNN imputation and business rules.</p>
+          <p class="modal-p">• Streamlined data preprocessing: one-hot encoding of categorical fields, datetime feature extraction, correlation-based feature pruning.</p>
+          <p class="modal-p">• Collaborated via GitHub with branch-based development, pull requests and code reviews to ensure reproducibility and continuous integration.</p>
+        `,
+        skills: ['Python', 'Pandas', 'Scikit-learn', 'Random Forest', 'XGBoost', 'Feature Engineering', 'KNN Imputation', 'GitHub']
+      }
+    };
+
+    /* ── Open / close ────────────────────────────────────── */
+    function openModal(key) {
+      const data = modalData[key];
+      if (!data) return;
+
+      document.getElementById('modal-badges').innerHTML = data.badges
+        .map(b => `<span class="modal-badge${b.current ? ' modal-badge--current' : ''}">${b.text}</span>`)
+        .join('');
+
+      document.getElementById('modal-title').textContent = data.title;
+
+      document.getElementById('modal-info-row').innerHTML = data.info
+        .map(i => `<div class="modal-info-item">
+          <span class="modal-info-label">${i.label}</span>
+          <span class="modal-info-value">${i.value}</span>
+        </div>`)
+        .join('');
+
+      document.getElementById('modal-body').innerHTML = data.body;
+
+      document.getElementById('modal-skills').innerHTML = data.skills
+        .map(s => `<span class="modal-tag">${s}</span>`)
+        .join('');
+
+      const overlay = document.getElementById('modal-overlay');
+      overlay.classList.add('is-open');
+      overlay.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      document.getElementById('modal-panel').scrollTop = 0;
+    }
+
+    function closeModal() {
+      const overlay = document.getElementById('modal-overlay');
+      overlay.classList.remove('is-open');
+      overlay.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    /* ── Event listeners ─────────────────────────────────── */
+    document.querySelectorAll('[data-modal]').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        openModal(btn.dataset.modal);
+      });
+    });
+
+    document.getElementById('modal-overlay').addEventListener('click', e => {
+      if (e.target === e.currentTarget) closeModal();
+    });
+
+    document.getElementById('modal-close').addEventListener('click', closeModal);
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeModal();
+    });
+  </script>
+
 </body>
 </html>
-
-
-
-    <!--
-SECTION 2: Skills
-<section id="skills" class="skills-section">
-  <h2>Coding Languages</h2>
-
-  <div class="cells">
-    <div class="cell">
-      <img src="images/python-logo.jpeg" alt="python logo">
-      <span>Python</span>
-    </div>
-    
-    <div class="cell">
-      <img src="images/logo-sql.png" alt="sql logo">
-      <span>SQL</span>
-    </div>
-    
-    <div class="cell">
-      <img src="images/c-logo.png" alt="c# logo">
-      <span>C#</span>
-    </div>
-
-    <div class="cell">
-      <img src="images/html-logo.webp" alt="html logo">
-      <span>HTML</span>
-    </div>
-    
-    <div class="cell">
-      <img src="images/css-logo.webp" alt="css logo">
-      <span>CSS</span>
-    </div>
-  </div>
-</section>
--->
