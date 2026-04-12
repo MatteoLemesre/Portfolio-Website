@@ -1,21 +1,3 @@
-function toggleDetails(btn) {
-  const details = btn.nextElementSibling;
-  const isOpen = details.style.display === "block";
-  details.style.display = isOpen ? "none" : "block";
-  btn.textContent = isOpen ? "More details ↓" : "Less details ↑";
-}
-
-const logo = document.querySelector(".logo");
-if (logo) {
-  window.addEventListener("scroll", () => {
-    const scroll = window.scrollY;
-    const maxScroll = window.innerHeight;
-    const progress = Math.min(scroll / maxScroll, 1);
-    logo.style.transform = `scale(${1 - progress * 0.5})`;
-    logo.style.opacity = `${1 - progress}`;
-  });
-}
-
 const contactForm = document.getElementById("contactForm");
 if (contactForm) {
   contactForm.addEventListener("submit", function (event) {
