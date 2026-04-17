@@ -20,14 +20,22 @@
       <a href="#">Matteo Lemesre</a>
     </div>
     <div class="right">
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
+      <a href="#experience" data-i18n="nav_experience">Experience</a>
+      <a href="#education" data-i18n="nav_education">Education</a>
+      <a href="#projects" data-i18n="nav_projects">Projects</a>
       <a href="#contact">
         <i class="fa-solid fa-envelope"></i>
-        <span>Contact</span>
+        <span data-i18n="nav_contact">Contact</span>
       </a>
     </div>
+    <div class="lang-switch">
+      <button class="lang-btn lang-btn--active" data-lang="en">EN</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" data-lang="fr">FR</button>
+    </div>
+    <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 
   <main>
@@ -35,18 +43,18 @@
     <!-- ── HERO ─────────────────────────────────────────── -->
     <section class="hero-section">
       <div class="text">
-        <h2>Hello, I am a Data Scientist</h2>
-        <p>Graduate from École Centrale de Nantes (Nantes, France), 23 years old, specialized in Applied Mathematics and Data Science, I am currently working at Qualidata as a Data Scientist.</p>
+        <h2 data-i18n="hero_h2">Hello, I am a Data Scientist</h2>
+        <p data-i18n="hero_bio">Graduate from École Centrale de Nantes (Nantes, France), 23 years old, specialized in Applied Mathematics and Data Science, I am currently working at Qualidata as a Data Scientist.</p>
 
         <div class="links">
           <div class="links-row">
             <a href="images/CV_Lemesre_FR.pdf" target="_blank" rel="noopener noreferrer">
               <i class="fa-solid fa-file-pdf"></i>
-              <span>Download CV (French)</span>
+              <span data-i18n="cv_fr">Download CV (French)</span>
             </a>
             <a href="images/CV_Lemesre_EN.pdf" target="_blank" rel="noopener noreferrer">
               <i class="fa-solid fa-file-pdf"></i>
-              <span>Download CV (English)</span>
+              <span data-i18n="cv_en">Download CV (English)</span>
             </a>
           </div>
         </div>
@@ -62,7 +70,7 @@
 
       <!-- EXPERIENCE -->
       <section id="experience">
-        <div class="sp-section-label">Experience</div>
+        <div class="sp-section-label" data-i18n="label_experience">Experience</div>
         <div class="sp-grid">
 
           <!-- Qualidata — current -->
@@ -72,10 +80,10 @@
               <span class="sp-card__location">Lille, France</span>
             </div>
             <div class="sp-card__role-row">
-              <span class="sp-card__role">Data Scientist</span>
-              <span class="sp-card__period">Feb 2026 – Now</span>
+              <span class="sp-card__role" data-i18n="qualidata_role">Data Scientist</span>
+              <span class="sp-card__period" data-i18n="qualidata_period">Feb 2026 – Now</span>
             </div>
-            <p class="sp-card__desc">Building data architecture solutions and analytical dashboards to support business decision-making.</p>
+            <p class="sp-card__desc" data-i18n="qualidata_desc">Building data architecture solutions and analytical dashboards to support business decision-making.</p>
             <div class="sp-card__tags">
               <span class="sp-tag">Python</span>
               <span class="sp-tag">Power BI</span>
@@ -90,10 +98,10 @@
               <span class="sp-card__location">Bangkok, Thailand</span>
             </div>
             <div class="sp-card__role-row">
-              <span class="sp-card__role">Data Engineer – Internship</span>
-              <span class="sp-card__period">Apr 2025 – Sep 2025</span>
+              <span class="sp-card__role" data-i18n="alstom_role">Data Engineer – Internship</span>
+              <span class="sp-card__period" data-i18n="alstom_period">Apr 2025 – Sep 2025</span>
             </div>
-            <p class="sp-card__desc">Designed and implemented a BIM library to streamline project information access across engineering teams. Developed data extraction scripts, automated asset tagging and led a four-member team.</p>
+            <p class="sp-card__desc" data-i18n="alstom_desc">Designed and implemented a BIM library to streamline project information access across engineering teams. Developed data extraction scripts, automated asset tagging and led a four-member team.</p>
             <div class="sp-card__tags">
               <span class="sp-tag">Python</span>
               <span class="sp-tag">C#</span>
@@ -111,10 +119,10 @@
               <span class="sp-card__location">Nantes, France</span>
             </div>
             <div class="sp-card__role-row">
-              <span class="sp-card__role">Mathematics Oral Examiner</span>
-              <span class="sp-card__period">Sep 2024 – Mar 2025</span>
+              <span class="sp-card__role" data-i18n="ststan_role">Mathematics Oral Examiner</span>
+              <span class="sp-card__period" data-i18n="ststan_period">Sep 2024 – Mar 2025</span>
             </div>
-            <p class="sp-card__desc">Conducted weekly oral exams (colles) for groups of three students in analysis, algebra and mathematical reasoning — preparing them for entrance into top French engineering schools.</p>
+            <p class="sp-card__desc" data-i18n="ststan_desc">Conducted weekly oral exams (colles) for groups of three students in analysis, algebra and mathematical reasoning — preparing them for entrance into top French engineering schools.</p>
             <div class="sp-card__tags">
               <span class="sp-tag">Analysis</span>
               <span class="sp-tag">Algebra</span>
@@ -129,10 +137,10 @@
               <span class="sp-card__location">Bordeaux, France</span>
             </div>
             <div class="sp-card__role-row">
-              <span class="sp-card__role">Data Scientist – Internship</span>
-              <span class="sp-card__period">Apr 2024 – Aug 2024</span>
+              <span class="sp-card__role" data-i18n="helloasso_role">Data Scientist – Internship</span>
+              <span class="sp-card__period" data-i18n="helloasso_period">Apr 2024 – Aug 2024</span>
             </div>
-            <p class="sp-card__desc">Predicted short- and long-term marketing benefits to guide strategic decisions. Benchmarked ARIMA/SARIMAX, Gradient Boosting and LSTM models with full hyperparameter optimization.</p>
+            <p class="sp-card__desc" data-i18n="helloasso_desc">Predicted short- and long-term marketing benefits to guide strategic decisions. Benchmarked ARIMA/SARIMAX, Gradient Boosting and LSTM models with full hyperparameter optimization.</p>
             <div class="sp-card__tags">
               <span class="sp-tag">Python</span>
               <span class="sp-tag">SQL</span>
@@ -148,7 +156,7 @@
 
       <!-- EDUCATION -->
       <section id="education">
-        <div class="sp-section-label">Education</div>
+        <div class="sp-section-label" data-i18n="label_education">Education</div>
         <div class="sp-grid">
 
           <!-- Centrale Nantes — featured -->
@@ -158,10 +166,10 @@
               <span class="sp-card__location">Nantes, France</span>
             </div>
             <div class="sp-card__role-row">
-              <span class="sp-card__role">Engineer's Degree — Applied Mathematics &amp; Data Science</span>
-              <span class="sp-card__period">Sep 2022 – Sep 2025</span>
+              <span class="sp-card__role" data-i18n="cn_role">Engineer's Degree — Applied Mathematics &amp; Data Science</span>
+              <span class="sp-card__period" data-i18n="cn_period">Sep 2022 – Sep 2025</span>
             </div>
-            <p class="sp-card__desc">Machine Learning, Statistical Learning, Numerical Probabilities, Optimization, and Statistical Data Modeling.</p>
+            <p class="sp-card__desc" data-i18n="cn_desc">Machine Learning, Statistical Learning, Numerical Probabilities, Optimization, and Statistical Data Modeling.</p>
             <div class="sp-card__tags">
               <span class="sp-tag">Machine Learning</span>
               <span class="sp-tag">Statistics</span>
@@ -178,10 +186,10 @@
               <span class="sp-card__location">Paris, France</span>
             </div>
             <div class="sp-card__role-row">
-              <span class="sp-card__role">Classes Préparatoires aux Grandes Écoles</span>
-              <span class="sp-card__period">Sep 2020 – Jun 2022</span>
+              <span class="sp-card__role" data-i18n="janson_role">Classes Préparatoires aux Grandes Écoles</span>
+              <span class="sp-card__period" data-i18n="janson_period">Sep 2020 – Jun 2022</span>
             </div>
-            <p class="sp-card__desc">Intensive 2-year program preparing for the national competitive exams for admission to top French engineering schools.</p>
+            <p class="sp-card__desc" data-i18n="janson_desc">Intensive 2-year program preparing for the national competitive exams for admission to top French engineering schools.</p>
             <div class="sp-card__tags">
               <span class="sp-tag">Mathematics</span>
               <span class="sp-tag">Physics</span>
@@ -197,10 +205,10 @@
               <span class="sp-card__location">Lille, France</span>
             </div>
             <div class="sp-card__role-row">
-              <span class="sp-card__role">High School Diploma — Science</span>
-              <span class="sp-card__period">Sep 2017 – Jun 2020</span>
+              <span class="sp-card__role" data-i18n="therese_role">High School Diploma — Science</span>
+              <span class="sp-card__period" data-i18n="therese_period">Sep 2017 – Jun 2020</span>
             </div>
-            <p class="sp-card__desc">French Baccalauréat with a science specialization, obtained with honors (mention Très Bien).</p>
+            <p class="sp-card__desc" data-i18n="therese_desc">French Baccalauréat with a science specialization, obtained with honors (mention Très Bien).</p>
             <div class="sp-card__tags">
               <span class="sp-tag">Sciences</span>
               <span class="sp-tag">Mathematics</span>
@@ -212,7 +220,7 @@
 
       <!-- PROJECTS -->
       <section id="projects">
-        <div class="sp-section-label">Projects</div>
+        <div class="sp-section-label" data-i18n="label_projects">Projects</div>
         <div class="sp-grid">
 
           <!-- LS2N — featured -->
@@ -222,10 +230,10 @@
               <span class="sp-card__location">Nantes, France</span>
             </div>
             <div class="sp-card__role-row">
-              <span class="sp-card__role">Epidemiological Analysis</span>
-              <span class="sp-card__period">Sep 2023 – Mar 2024</span>
+              <span class="sp-card__role" data-i18n="ls2n_role">Epidemiological Analysis</span>
+              <span class="sp-card__period" data-i18n="ls2n_period">Sep 2023 – Mar 2024</span>
             </div>
-            <p class="sp-card__desc">Compared COVID-19 dynamics across territories using Unbalanced Optimal Transport theory, with interactive visualizations built in Streamlit.</p>
+            <p class="sp-card__desc" data-i18n="ls2n_desc">Compared COVID-19 dynamics across territories using Unbalanced Optimal Transport theory, with interactive visualizations built in Streamlit.</p>
             <div class="sp-card__tags">
               <span class="sp-tag">Python</span>
               <span class="sp-tag">Optimal Transport</span>
@@ -242,10 +250,10 @@
               <span class="sp-card__location">Nantes, France</span>
             </div>
             <div class="sp-card__role-row">
-              <span class="sp-card__role">Data Science Challenge</span>
-              <span class="sp-card__period">Nov 2023 – Dec 2023</span>
+              <span class="sp-card__role" data-i18n="sncf_role">Data Science Challenge</span>
+              <span class="sp-card__period" data-i18n="sncf_period">Nov 2023 – Dec 2023</span>
             </div>
-            <p class="sp-card__desc">Predicted passenger load on SNCF trains from temporal, geographic and contextual data — full pipeline from exploration to RNN and gradient boosting models.</p>
+            <p class="sp-card__desc" data-i18n="sncf_desc">Predicted passenger load on SNCF trains from temporal, geographic and contextual data — full pipeline from exploration to RNN and gradient boosting models.</p>
             <div class="sp-card__tags">
               <span class="sp-tag">Python</span>
               <span class="sp-tag">Pandas</span>
@@ -260,26 +268,26 @@
 
       <!-- CONTACT -->
       <section id="contact">
-        <div class="sp-section-label">Contact</div>
+        <div class="sp-section-label" data-i18n="label_contact">Contact</div>
         <div class="sp-contact-layout">
           <div class="sp-contact-intro">
-            <p>Let's get in touch.</p>
-            <p>Feel free to send me a message for any opportunity or collaboration.</p>
+            <p data-i18n="contact_heading">Let's get in touch.</p>
+            <p data-i18n="contact_sub">Feel free to send me a message for any opportunity or collaboration.</p>
           </div>
           <form id="contactForm" action="https://formspree.io/f/xeelepnl" method="POST">
             <div class="form-group">
-              <label for="name">Name</label>
+              <label for="name" data-i18n="label_name">Name</label>
               <input type="text" id="name" name="Name" required>
             </div>
             <div class="form-group">
-              <label for="email">Email</label>
+              <label for="email" data-i18n="label_email">Email</label>
               <input type="email" id="email" name="Email" required>
             </div>
             <div class="form-group">
-              <label for="message">Message</label>
+              <label for="message" data-i18n="label_message">Message</label>
               <textarea id="message" name="Message" rows="5" required></textarea>
             </div>
-            <button type="submit" class="submit-btn">Send Message</button>
+            <button type="submit" class="submit-btn" data-i18n="btn_submit">Send Message</button>
             <div id="successMessage" class="success-message">
               Message sent! I'll get back to you soon.
             </div>
@@ -487,12 +495,141 @@
           <p class="modal-p">• Collaborated via GitHub with branch-based development, pull requests and code reviews to ensure reproducibility and continuous integration.</p>
         `,
         skills: ['Python', 'Pandas', 'Scikit-learn', 'Random Forest', 'XGBoost', 'Feature Engineering', 'KNN Imputation', 'GitHub']
+      },
+
+      qualidata_fr: {
+        badges: [
+          { text: '● Poste actuel', current: true },
+          { text: 'Fév. 2026 — Présent' },
+          { text: 'Lille, France' }
+        ],
+        title: 'Data Scientist chez Qualidata',
+        info: [
+          { label: 'Entreprise', value: 'Qualidata' },
+          { label: 'Poste',      value: 'Data Scientist' },
+          { label: 'Lieu',       value: 'Lille, France' },
+          { label: 'Type',       value: 'CDI' }
+        ],
+        body: `
+          <p class="modal-section-title">Objectif</p>
+          <p class="modal-p">Architecture de données.</p>
+        `,
+        skills: ['Python', 'Power BI']
+      },
+
+      alstom_fr: {
+        badges: [
+          { text: 'Avr. 2025 — Sept. 2025' },
+          { text: 'Bangkok, Thaïlande' },
+          { text: 'Stage' }
+        ],
+        title: 'Ingénieur Data chez Alstom',
+        info: [
+          { label: 'Entreprise', value: 'Alstom' },
+          { label: 'Poste',      value: 'Ingénieur Data' },
+          { label: 'Lieu',       value: 'Bangkok, Thaïlande' },
+          { label: 'Type',       value: 'Stage' }
+        ],
+        body: `
+          <p class="modal-section-title">Présentation d'Alstom</p>
+          <p class="modal-p">ALSTOM est une entreprise française renommée spécialisée dans la fabrication de matériel roulant, fondée en 1928. L'entreprise opère à l'échelle mondiale dans le secteur du transport ferroviaire et emploie plus de quatre-vingt mille personnes. ALSTOM intervient dans divers secteurs, notamment le transport de voyageurs et les systèmes de signalisation, produisant une grande variété de trains : grande vitesse, banlieue, régionaux, urbains, ainsi que des tramways.</p>
+          <p class="modal-p">Durant mon stage, j'ai intégré le département Building Information Modeling (BIM), une équipe en pleine croissance. Bien que ce département soit relativement récent — créé il y a moins de trois ans — il a connu une expansion significative et compte aujourd'hui une dizaine de professionnels dédiés, soit 18 en incluant les stagiaires.</p>
+          <p class="modal-section-title">Présentation du BIM</p>
+          <p class="modal-p">Le Building Information Modelling (BIM) va bien au-delà de la géométrie numérique. Il intègre des données relatives au temps, aux coûts, à la durabilité et aux fonctionnalités. Contrairement à la CAO traditionnelle, le BIM offre une vision complète d'un projet, aidant les ingénieurs à prendre de meilleures décisions, à renforcer la collaboration, à accroître la productivité et à garantir le respect des délais.</p>
+          <p class="modal-p">Le BIM transforme les plans 2D en modèles 3D, conserve les informations des phases antérieures, réduit les risques et les coûts, améliore la visualisation et fluidifie la communication. Il minimise également les litiges, les reprises de conception, et facilite la gestion pendant les phases de construction et d'exploitation.</p>
+          <p class="modal-section-title">Les Objectifs</p>
+          <p class="modal-p">Durant mon stage chez ALSTOM, j'ai travaillé sur un projet de R&D intitulé "BIM Library". L'objectif principal était de constituer une bibliothèque centralisée regroupant toutes les données relatives aux objets BIM : récupération systématique des métadonnées, mise en place d'un système de tagging des assets, développement de scripts et rédaction de fiches de processus et de méthode.</p>
+          <p class="modal-p">En tant que chef de projet, j'étais responsable de la supervision de l'ensemble des activités. Il s'agissait d'une initiative construite de zéro, nécessitant la contribution de tous pour en assurer le succès. Nous cherchions à résoudre des problèmes récurrents : formats de données hétérogènes, délais de recherche d'éléments, stockage désorganisé, difficultés de partage et doublons de travail entre équipes.</p>
+          <p class="modal-section-title">L'Équipe</p>
+          <p class="modal-p">Nous étions quatre stagiaires issus d'écoles différentes : Kacper Brossard (Designer), Thandar Lwin (Support BIM) et Wassim Hmidy (Développeur). Le projet était encadré par Garance Marion (Ingénieure IA et Data Science) et Hugues Zarka (Directeur Adjoint BIM).</p>
+          <p class="modal-p">Ma mission initiale consistait à définir le périmètre du projet et coordonner l'équipe. J'ai établi les workflows, travaillé sur la base de données et guidé la création des interfaces. Durant la phase de développement, j'ai travaillé sur les plug-ins (C#) et sur WinDev.</p>
+        `,
+        skills: ['Python', 'C#', 'WinDev', "Conception d'interfaces", 'Architecture de données', 'Gestion de projet']
+      },
+
+      helloasso_fr: {
+        badges: [
+          { text: 'Avr. 2024 — Août 2024' },
+          { text: 'Bordeaux, France' },
+          { text: 'Stage' }
+        ],
+        title: 'Data Scientist chez HelloAsso',
+        info: [
+          { label: 'Entreprise', value: 'HelloAsso' },
+          { label: 'Poste',      value: 'Data Scientist' },
+          { label: 'Lieu',       value: 'Bordeaux, France' },
+          { label: 'Type',       value: 'Stage' }
+        ],
+        body: `
+          <p class="modal-section-title">Présentation de HelloAsso</p>
+          <p class="modal-p">HelloAsso est une plateforme en ligne française dédiée aux associations et organisations à but non lucratif. Fondée en 2009, elle est devenue un acteur incontournable du secteur associatif français. La plateforme permet aux associations de gérer collectes de fonds, adhésions, billetterie d'événements, campagnes de crowdfunding, et bien plus. Ce qui distingue HelloAsso, c'est son modèle social et solidaire.</p>
+          <p class="modal-section-title">Présentation de l'Équipe</p>
+          <p class="modal-p">Durant ce stage, j'ai été encadré par Didier Colin (Directeur Recherche), Frédérique Castagnac (Directrice des Données) et Erwan Olivier (Data Scientist), qui m'ont aidé à structurer mon travail et à améliorer mes analyses.</p>
+          <p class="modal-p">J'ai également présenté mes travaux au comité exécutif : Léa Thomassin (Présidente), Pedro Mendoza Sevilla (DAF) et Nicolas Vonthron (PDG). Ces réunions ont permis d'affiner les objectifs et d'aligner le travail sur les besoins des utilisateurs finaux.</p>
+          <p class="modal-section-title">Objectifs</p>
+          <p class="modal-p">Le modèle économique de HelloAsso repose sur les contributions volontaires des utilisateurs. Lors d'un paiement sur la plateforme, une contribution suggérée est affichée — optionnelle et modifiable. L'ensemble des revenus provient de ces contributions volontaires.</p>
+          <p class="modal-p">Comprendre le comportement de générosité à long terme est essentiel pour la pérennité de ce modèle. L'objectif du projet était d'exploiter des données historiques pour construire des modèles de prévision permettant d'anticiper les budgets annuels, suivre les revenus mensuels ou hebdomadaires, et estimer les pertes potentielles en cas d'incident.</p>
+          <p class="modal-section-title">Aperçu du Projet</p>
+          <p class="modal-p">Le stage s'est articulé en trois grandes étapes : l'analyse des données, l'évaluation de différents modèles (SARIMA et LSTM, comparés via le RMSE), puis le développement d'une approche combinée avec une méthode de prévision jour par jour.</p>
+        `,
+        skills: ['Python', 'SQL', 'Pandas', 'Scikit-learn', 'TensorFlow', 'ARIMA/SARIMAX', 'LSTM', 'Visualisation de données', 'Communication']
+      },
+
+      cn_fr: {
+        badges: [
+          { text: 'Sept. 2022 — Sept. 2025' },
+          { text: 'Nantes, France' },
+          { text: "Diplôme d'Ingénieur" }
+        ],
+        title: "Diplôme d'Ingénieur à Centrale Nantes",
+        info: [
+          { label: 'École',      value: 'École Centrale de Nantes' },
+          { label: 'Diplôme',    value: "Diplôme d'Ingénieur" },
+          { label: 'Spécialité', value: 'Maths Appliquées & Data Science' },
+          { label: 'Lieu',       value: 'Nantes, France' }
+        ],
+        body: `
+          <p class="modal-section-title">Aperçu</p>
+          <p class="modal-p">Centrale Nantes est une école d'ingénieurs dans le top 10 français.</p>
+          <p class="modal-section-title">Mathématiques Appliquées</p>
+          <p class="modal-p">• Machine Learning et Apprentissage Statistique (méthodes à noyaux, forêts aléatoires, boosting, deep learning).<br>• Probabilités Numériques (Monte Carlo, Algèbre Linéaire Randomisée).<br>• Mathématiques Fondamentales (Analyse Fonctionnelle, Probabilités et Processus Stochastiques, Analyse Numérique des EDP/EDS).<br>• Modélisation Stochastique et Calcul, Quantification des Incertitudes.</p>
+          <p class="modal-section-title">DataSIM — Data Science</p>
+          <p class="modal-p">• Calcul Scientifique et Optimisation, Modélisation Statistique des Données, Apprentissage Statistique.<br>• Analyse des Graphes et des Séries Temporelles.<br>• Analyse d'Images, Traitement du Signal et Représentation.</p>
+          <p class="modal-section-title">Développement International des Affaires</p>
+          <p class="modal-p">• Finance, Prospection et Vente.<br>• Marketing International.<br>• Droit et Négociation.</p>
+        `,
+        skills: ['Machine Learning', 'Python', 'Optimisation', 'Probabilités', 'Séries Temporelles', 'Traitement du Signal']
+      },
+
+      sncf_fr: {
+        badges: [
+          { text: 'Nov. 2023 — Déc. 2023' },
+          { text: 'Nantes, France' },
+          { text: 'Challenge Data Science' }
+        ],
+        title: 'Challenge Data Science chez SNCF',
+        info: [
+          { label: 'Organisation', value: 'SNCF' },
+          { label: 'Type',         value: 'Challenge Académique' },
+          { label: 'Contexte',     value: 'Centrale Nantes' },
+          { label: 'Lieu',         value: 'Nantes, France' }
+        ],
+        body: `
+          <p class="modal-p">• Construction d'un pipeline de prévision de bout en bout en Python (pandas, scikit-learn) pour prédire les taux d'occupation par station à partir de données de comptage infrarouge aux portes.</p>
+          <p class="modal-p">• Obtention d'une MAE de 0,005 contre un benchmark de 0,01, en comparant modèles linéaires, Random Forest (meilleure MAE 0,005), réseaux de neurones et XGBoost.</p>
+          <p class="modal-p">• Création de variables incluant des facteurs contextuels (date, numéro de train, identifiant de gare, créneau horaire, sens, composition) et six décalages d'occupation passée par train et par station, avec gestion des valeurs manquantes par imputation KNN et règles métier.</p>
+          <p class="modal-p">• Optimisation du prétraitement : encodage one-hot des champs catégoriels, extraction de caractéristiques temporelles, élagage des variables par corrélation.</p>
+          <p class="modal-p">• Collaboration via GitHub avec développement par branches, pull requests et revues de code pour assurer la reproductibilité et l'intégration continue.</p>
+        `,
+        skills: ['Python', 'Pandas', 'Scikit-learn', 'Random Forest', 'XGBoost', 'Feature Engineering', 'Imputation KNN', 'GitHub']
       }
     };
 
     /* ── Open / close ────────────────────────────────────── */
     function openModal(key) {
-      const data = modalData[key];
+      const frKey = key + '_fr';
+      const dataKey = (currentLang === 'fr' && modalData[frKey]) ? frKey : key;
+      const data = modalData[dataKey];
       if (!data) return;
 
       document.getElementById('modal-badges').innerHTML = data.badges
