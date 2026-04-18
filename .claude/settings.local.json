@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(find . -name \".DS_Store\" -delete)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   }
 }
